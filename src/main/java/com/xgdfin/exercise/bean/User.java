@@ -6,8 +6,8 @@ package com.xgdfin.exercise.bean;
  **/
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.xgdfin.exercise.annotation.AnnotationDemo;
 
 import java.util.Date;
 
@@ -24,10 +24,12 @@ public class User {
 
     //格式化日期属性
     @JsonFormat(pattern = "yyyy年MM月dd日")
+    @AnnotationDemo(desc = "生日",  nonNull = false)
     private Date birthday;
 
     //序列化email属性为mail
     @JsonProperty("email")
+    @AnnotationDemo(desc = "邮箱", maxLength = "18", minLength = "0", nonNull = true)
     private String email;
 
     public String getName() {
