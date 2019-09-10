@@ -15,7 +15,7 @@ import java.util.stream.Stream;
  * @author chuanyin.li
  * @date 2019-09-10
  */
-public class demo2 {
+public class Demo2 {
 
     public static void main(String[] args) {
         List<Project> projects = Project.buildData();

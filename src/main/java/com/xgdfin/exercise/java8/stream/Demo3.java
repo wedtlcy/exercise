@@ -1,4 +1,4 @@
-package com.xgdfin.exercise.stream;
+package com.xgdfin.exercise.java8.stream;
 
 import java.util.Arrays;
 import java.util.List;
@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
  * @author chuanyin.li
  * @date 2019-09-10
  */
-public class demo3 {
+public class Demo3 {
 
     public static void main(String[] args) {
         List<String> words = Arrays.asList("Java 8", "Lambdas", "In", "Action");

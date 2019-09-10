@@ -1,4 +1,4 @@
-package com.xgdfin.exercise.stream;
+package com.xgdfin.exercise.java8.stream;
 
 import java.util.Arrays;
 import java.util.List;
@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
  * @author chuanyin.li
  * @date 2019-09-10
  */
-public class demo4 {
+public class Demo4 {
 
     public static void main(String[] args) {
         List<String> list = Arrays.asList("I am a boy", "I love the girl", "But the girl loves another girl");
