@@ -18,7 +18,7 @@ import static java.util.stream.Collectors.partitioningBy;
 public class Demo9 {
 
     public static boolean isBackEnd(Project project){
-        return "test1".equalsIgnoreCase(project.getTester) || "test2".equalsIgnoreCase(project.getTester());
+        return "test1".equalsIgnoreCase(project.getTester()) || "test2".equalsIgnoreCase(project.getTester());
     }
 
     public static void main(String[] args) {

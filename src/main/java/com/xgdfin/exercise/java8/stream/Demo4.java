@@ -16,6 +16,7 @@ import java.util.stream.Collectors;
 public class Demo4 {
 
     public static void main(String[] args) {
+
         List<String> list = Arrays.asList("I am a boy", "I love the girl", "But the girl loves another girl");
 
         list.stream()

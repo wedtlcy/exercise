@@ -21,7 +21,7 @@ public class Demo7 {
         List<Project> projects = Project.buildData();
 
         Map<String, Integer> collect = projects.stream()
-                .collect(toMap(Project::getName, Project::getStars));
+                .collect(toMap(Project::getName, Project::getBugs));
         System.out.println(collect);
 
         Map<String, Project> collect1 = projects.stream()

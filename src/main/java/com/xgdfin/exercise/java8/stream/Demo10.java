@@ -31,6 +31,7 @@ import static java.util.stream.Collectors.toCollection;
 public class Demo10 {
 
     public static void main(String[] args) {
+        
         List<Project> projects = Project.buildData();
 
         Collection<Project> collect = projects.stream()

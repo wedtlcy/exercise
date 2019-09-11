@@ -31,5 +31,6 @@ public class Demo2 {
 
         System.out.println("===================");
         Stream.of(1, 2, 3, 3, 2, 4).skip(4).forEach(n -> System.out.println(n));
+
     }
 }

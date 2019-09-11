@@ -31,6 +31,5 @@ public class Demo11 {
                 })
                 .forEach(s -> System.out.format("forEach: %s [%s]\n",
                         s, Thread.currentThread().getName()));
-
     }
 }

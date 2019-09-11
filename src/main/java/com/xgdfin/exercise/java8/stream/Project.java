@@ -2,6 +2,9 @@ package com.xgdfin.exercise.java8.stream;
 
 import lombok.Builder;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,6 +15,9 @@ import java.util.List;
  **/
 @Data
 @Builder
+@ToString
+@Getter
+@Setter
 public class Project {
 
     /**
@@ -43,7 +49,6 @@ public class Project {
      * 描述
      */
     private String description;
-
 
     public static List<Project> buildData() {
         List<Project> data = new ArrayList<>();

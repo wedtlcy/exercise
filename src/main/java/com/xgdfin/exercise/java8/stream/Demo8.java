@@ -11,7 +11,7 @@ import static java.util.stream.Collectors.groupingBy;
  * <p>
  * Collectors.groupingBy
  * <p>
- * 然后根据项目分组
+ * 然后根据项目类型分组
  *
  * @author chuanyin.li
  * @date 2019-09-10
@@ -21,17 +21,17 @@ public class Demo8 {
     public static void main(String[] args) {
         List<Project> projects = Project.buildData();
         Map<String, List<Project>> collect = projects.stream()
-                .collect(groupingBy(Project::getAuthor));
+                .collect(groupingBy(Project::getTester));
         System.out.println(collect);
 
         Map<String, Map<String, Long>> collect1 = projects.stream()
-                .collect(groupingBy(Project::getAuthor,
+                .collect(groupingBy(Project::getTester,
                         groupingBy(p -> {
-                            if ("java".equalsIgnoreCase(p.getLanguage()) ||
-                                    "python".equalsIgnoreCase(p.getLanguage())) {
-                                return "后端";
+                            if ("福田项目".equalsIgnoreCase(p.getName()) ||
+                                    "衢州项目".equalsIgnoreCase(p.getName())) {
+                                return "政府";
                             }
-                            return "前端";
+                            return "公司";
                         }, counting())
                 ));
         System.out.println(collect1);

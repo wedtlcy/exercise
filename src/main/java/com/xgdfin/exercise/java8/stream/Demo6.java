@@ -37,19 +37,19 @@ public class Demo6 {
     public static void main(String[] args) {
         List<Project> projects = Project.buildData();
         Double collect = projects.stream()
-                .collect(averagingInt(Project::getStars));
+                .collect(averagingInt(Project::getBugs));
         System.out.println(collect);
 
         System.out.println(Stream.of("Hello", "Java8")
                 .collect(joining(",")));
 
         Integer collect1 = projects.stream()
-                .collect(reducing(0, Project::getStars, (x, y) -> x + y));
+                .collect(reducing(0, Project::getBugs, (x, y) -> x + y));
         System.out.println(collect1);
 
         Optional<Integer> collect2 = projects.stream()
-                .map(Project::getStars)
+                .map(Project::getBugs)
                 .collect(reducing((x, y) -> x + y));
-        System.out.println(collect2);
+        System.out.println(collect2.get());
     }
 }

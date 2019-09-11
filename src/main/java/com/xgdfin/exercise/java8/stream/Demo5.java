@@ -17,6 +17,7 @@ import java.util.List;
 public class Demo5 {
 
     public static void main(String[] args) {
+
         List<Project> projects = Project.buildData();
 
         boolean hasTester = projects.stream()
