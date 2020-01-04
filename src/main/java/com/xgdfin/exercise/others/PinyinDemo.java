@@ -1,9 +1,6 @@
 package com.xgdfin.exercise.others;
 
-/**
- * @author chuanyin.li
- * @create 2020-01-04 22:46
- **/
+
 import net.sourceforge.pinyin4j.PinyinHelper;
 import net.sourceforge.pinyin4j.format.HanyuPinyinCaseType;
 import net.sourceforge.pinyin4j.format.HanyuPinyinOutputFormat;
@@ -11,6 +8,11 @@ import net.sourceforge.pinyin4j.format.HanyuPinyinToneType;
 import net.sourceforge.pinyin4j.format.HanyuPinyinVCharType;
 import net.sourceforge.pinyin4j.format.exception.BadHanyuPinyinOutputFormatCombination;
 
+/**
+ * 转载：https://www.cnblogs.com/qingyunlanxi/p/10898706.html
+ * @author chuanyin.li
+ * @create 2020-01-04 22:46
+ **/
 public class PinyinDemo {
 
     //将中文转换为英文
