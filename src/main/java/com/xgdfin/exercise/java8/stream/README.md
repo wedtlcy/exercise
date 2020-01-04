@@ -86,11 +86,11 @@ Stream.iterate(0, n -> n + 2)
 ### 筛选 filter Demo2
 
 filter 函数接收一个Lambda表达式作为参数，该表达式返回boolean，在执行过程中，流将元素逐一输送给filter，并筛选出执行结果为true的元素。
-如，筛选出所有学生：
+如，筛选出所有开发：
 
 ```java
 List<Project> result = list.stream()
-                    .filter(Project::isStudent)
+                    .filter(Project:)
                     .collect(toList());
 ```
 
@@ -127,7 +127,7 @@ List<Project> result = list.stream()
 ### 映射 Demo3
 
 对流中的每个元素执行一个函数，使得元素转换成另一种类型输出。流会将每一个元素输送给map函数，并执行map中的Lambda表达式，最后将执行结果存入一个新的流中。
-如，获取项目的名称(实则是将Perosn类型转换成String类型)：
+如，获取项目的名称(实则是将Project类型转换成String类型)：
 
 ```java
 List<Project> result = list.stream()
